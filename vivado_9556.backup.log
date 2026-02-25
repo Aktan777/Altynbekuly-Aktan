@@ -1,0 +1,967 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 24 16:41:30 2026
+# Process ID: 9556
+# Current directory: C:/Users/krist/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2596 C:\Users\krist\project_3\project_3.xpr
+# Log file: C:/Users/krist/project_3/vivado.log
+# Journal file: C:/Users/krist/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/krist/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 804.723 ; gain = 110.305
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: variant2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 890.027 ; gain = 73.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 946.488 ; gain = 130.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 946.488 ; gain = 130.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 946.488 ; gain = 130.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1594.746 ; gain = 778.496
+76 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1594.746 ; gain = 778.496
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1594.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1594.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1594.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1594.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1603.348 ; gain = 8.602
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1661.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.066 ; gain = 1.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.066 ; gain = 1.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.066 ; gain = 1.883
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1698.859 ; gain = 37.676
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1765.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_FCR1_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_SCR2_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_SCR1_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1765.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1765.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1765.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1782.160 ; gain = 16.566
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1799.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_FCR1_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_SCR2_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_SCR1_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1799.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1799.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1799.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1808.352 ; gain = 8.824
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'E_A2' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:96]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT5' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:99]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'E_NO3' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'E_NA3' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'E_EX2' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT6' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'E_NOA3' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'E_NOAO2' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'E_NO3A2' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'E_NAO2' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'E_NAOA2' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1808.352 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+WARNING: [Synth 8-3848] Net y1 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:11]
+WARNING: [Synth 8-3848] Net y2 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:12]
+WARNING: [Synth 8-3848] Net y3 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:13]
+WARNING: [Synth 8-3848] Net y4 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+WARNING: [Synth 8-3331] design variant2 has unconnected port y1
+WARNING: [Synth 8-3331] design variant2 has unconnected port y2
+WARNING: [Synth 8-3331] design variant2 has unconnected port y3
+WARNING: [Synth 8-3331] design variant2 has unconnected port y4
+WARNING: [Synth 8-3331] design variant2 has unconnected port x1
+WARNING: [Synth 8-3331] design variant2 has unconnected port x2
+WARNING: [Synth 8-3331] design variant2 has unconnected port x3
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1808.352 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-637] synthesizing blackbox instance 'A2_X1_NX4' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+WARNING: [Synth 8-3848] Net y1 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:11]
+WARNING: [Synth 8-3848] Net y2 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:12]
+WARNING: [Synth 8-3848] Net y3 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:13]
+WARNING: [Synth 8-3848] Net y4 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+WARNING: [Synth 8-3331] design variant2 has unconnected port y1
+WARNING: [Synth 8-3331] design variant2 has unconnected port y2
+WARNING: [Synth 8-3331] design variant2 has unconnected port y3
+WARNING: [Synth 8-3331] design variant2 has unconnected port y4
+WARNING: [Synth 8-3331] design variant2 has unconnected port x2
+WARNING: [Synth 8-3331] design variant2 has unconnected port x3
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1808.352 ; gain = 0.000
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'A2_X1_NX4' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+WARNING: [Synth 8-3848] Net y1 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:11]
+WARNING: [Synth 8-3848] Net y2 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:12]
+WARNING: [Synth 8-3848] Net y3 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:13]
+WARNING: [Synth 8-3848] Net y4 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+WARNING: [Synth 8-3331] design variant2 has unconnected port y1
+WARNING: [Synth 8-3331] design variant2 has unconnected port y2
+WARNING: [Synth 8-3331] design variant2 has unconnected port y3
+WARNING: [Synth 8-3331] design variant2 has unconnected port y4
+WARNING: [Synth 8-3331] design variant2 has unconnected port x2
+WARNING: [Synth 8-3331] design variant2 has unconnected port x3
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1808.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1831.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'A2_X1_NX4' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_A2_NX4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:89]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:90]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:92]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_T_A2_NX4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'NO3_Block' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+WARNING: [Synth 8-3848] Net y1 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:11]
+WARNING: [Synth 8-3848] Net y2 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:12]
+WARNING: [Synth 8-3848] Net y3 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:13]
+WARNING: [Synth 8-3848] Net y4 in module/entity variant2 does not have driver. [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+WARNING: [Synth 8-3331] design variant2 has unconnected port y1
+WARNING: [Synth 8-3331] design variant2 has unconnected port y2
+WARNING: [Synth 8-3331] design variant2 has unconnected port y3
+WARNING: [Synth 8-3331] design variant2 has unconnected port y4
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1831.750 ; gain = 0.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1831.750 ; gain = 0.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1831.750 ; gain = 0.617
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1882.762 ; gain = 51.629
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1882.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'variant2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'not_gate' (1#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:11]
+INFO: [Synth 8-3491] module 'a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:8' bound to instance 'A2_X1_NX4' of component 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'and_gate' (2#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'a2' (3#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/a2.vhd:14]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_A2_NX4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:97]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:98]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:100]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_T_A2_NX4' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:101]
+INFO: [Synth 8-3491] module 'no3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:4' bound to instance 'NO3_Block' of component 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'no3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'or_gate' (4#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:25]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'no3' (5#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3.vhd:11]
+INFO: [Synth 8-3491] module 'na3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:5' bound to instance 'NA3_Block' of component 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'na3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:23]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:24]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'na3' (6#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/na3.vhd:12]
+INFO: [Synth 8-3491] module 'ex2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:6' bound to instance 'EX2_Block' of component 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'ex2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT2' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:33]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:34]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ex2' (7#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/ex2.vhd:12]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'NOT_X3' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:106]
+INFO: [Synth 8-3491] module 'noa3' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:4' bound to instance 'NOA3_Block' of component 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'noa3' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'noa3' (8#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noa3.vhd:12]
+INFO: [Synth 8-3491] module 'noao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:4' bound to instance 'NOAO2_Block' of component 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'noao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:31]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:32]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'noao2' (9#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/noao2.vhd:13]
+INFO: [Synth 8-3491] module 'no3a2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:4' bound to instance 'NO3A2_Block' of component 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'no3a2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:29]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR2' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'no3a2' (10#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/no3a2.vhd:12]
+INFO: [Synth 8-3491] module 'nao2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:23' bound to instance 'NAO2_Block' of component 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'nao2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:47]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:49]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'nao2' (11#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/nao2.vhd:30]
+INFO: [Synth 8-3491] module 'naoa2' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:4' bound to instance 'NAOA2_Block' of component 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'naoa2' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND1' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:29]
+INFO: [Synth 8-3491] module 'and_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/and.vhd:4' bound to instance 'E_AND2' of component 'and_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:30]
+INFO: [Synth 8-3491] module 'or_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/or.vhd:6' bound to instance 'E_OR1' of component 'or_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:31]
+INFO: [Synth 8-3491] module 'not_gate' declared at 'C:/Users/krist/project_3/project_3.srcs/sources_1/new/not.vhd:6' bound to instance 'E_NOT1' of component 'not_gate' [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'naoa2' (12#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/naoa2.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'variant2' (13#1) [C:/Users/krist/project_3/project_3.srcs/sources_1/new/variant2.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1882.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1882.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1882.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1882.762 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 24 22:18:15 2026...
